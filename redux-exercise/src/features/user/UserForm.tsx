@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { setUser } from "./userSlice";
 import type { User } from "../../types/User";
+import "./UserPage.module.css";
 
 export function UserForm() {
 	const dispatch = useDispatch();
