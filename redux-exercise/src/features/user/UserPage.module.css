@@ -1,0 +1,88 @@
+.user-form-container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f8f9fa;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-form-container h2 {
+	color: #343a40;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[name="firstname"],
+input[name="lastname"] {
+	padding: 10px;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.hobbies-container {
+	margin-top: 10px;
+}
+
+.hobbies-container > label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: #495057;
+}
+
+.hobbies-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.hobby-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.hobby-item input[type="checkbox"] {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.hobby-item label {
+	cursor: pointer;
+}
+
+.submit-button {
+	background-color: #0d6efd;
+	color: white;
+	border: none;
+	padding: 12px;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	margin-top: 10px;
+}
+
+.submit-button:hover {
+	background-color: #0b5ed7;
+}
+
+.submit-button:active {
+	background-color: #0a58ca;
+	transform: translateY(1px);
+}
