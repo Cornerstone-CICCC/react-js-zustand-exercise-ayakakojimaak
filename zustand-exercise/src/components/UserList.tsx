@@ -1,6 +1,7 @@
 import { useUserStore } from "../stores/user.store";
+import type { User } from "../types/User";
 
-export function User() {
+export function UserList() {
 	const { users, deleteUser } = useUserStore();
 
 	return (
@@ -8,7 +9,7 @@ export function User() {
 			<h2>User List</h2>
 			{users.length > 0 && (
 				<ul>
-					{users.map((user) => (
+					{users.map((user: User) => (
 						<li key={user.id}>
 							<div>firstname: {user.firstname}</div>
 							<div>lastname: {user.lastname}</div>
